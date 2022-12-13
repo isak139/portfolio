@@ -77,7 +77,7 @@ export default function Home() {
             </div>
             <a
               href="https://twitter.com/isak???"
-              className="text-2xl flex items-center mb-5 hover:cursor-pointer"
+              className="text-2xl flex items-center mb-5"
             >
               <FontAwesomeIcon icon={faTwitter} />
               <p className="ml-2">@あとで書く</p>
