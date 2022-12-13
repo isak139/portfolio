@@ -1,12 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUnity,
   faReact,
   faSquareJs,
+  faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import SkillCard from "../components/SkillCard";
 
 export default function Home() {
@@ -60,6 +62,26 @@ export default function Home() {
             <SkillCard icon={faUnity} skillName="blender" text="aaaa" />
             <SkillCard icon={faUnity} skillName="a" text="aaaa" />
             <SkillCard icon={faUnity} skillName="a" text="aaaa" />
+          </div>
+        </div>
+      </section>
+      <section className="text-gray-700 border-b border-gray-200">
+        <div className="mx-auto container max-w-screen-lg">
+          <h1 className="text-center text-3xl text-gray-900 mt-5 mb-5">
+            Contact
+          </h1>
+          <div className="flex flex-col items-center">
+            <div className="text-2xl flex items-center mb-3">
+              <FontAwesomeIcon icon={faEnvelope} />
+              <p className="ml-2">hogehoge[at]fuga.com</p>
+            </div>
+            <a
+              href="https://twitter.com/isak???"
+              className="text-2xl flex items-center mb-5 hover:cursor-pointer"
+            >
+              <FontAwesomeIcon icon={faTwitter} />
+              <p className="ml-2">@あとで書く</p>
+            </a>
           </div>
         </div>
       </section>
