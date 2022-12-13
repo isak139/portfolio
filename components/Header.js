@@ -5,7 +5,9 @@ function Header() {
     <header className="sticky top-0 z-10 text-gray-700 border-b border-gray-200 bg-white">
       <div className="container flex mx-auto p-5 flex-col md:flex-row items-center">
         <a className="font-medium text-gray-900 mb-4 md:mb-0">
-          <span className="text-xl ml-3 cursor-pointer">isak</span>
+          <span className="text-xl ml-3 cursor-pointer">
+            isak&apos;s portfolio
+          </span>
         </a>
         <nav className="md:ml-auto text-base">
           <Link
