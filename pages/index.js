@@ -1,13 +1,20 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUnity,
+  faReact,
+  faSquareJs,
+} from "@fortawesome/free-brands-svg-icons";
+import SkillCard from "../components/SkillCard";
 
 export default function Home() {
   return (
     <>
       <section className="text-gray-700 border-b border-gray-200">
-        <div className="flex flex-col mx-auto container items-center max-w-screen-lg">
-          <h1 className="text-3xl mx-5 mt-5 md:mr-auto">About</h1>
+        <div className="mx-auto container items-center max-w-screen-lg">
+          <h1 className="text-center text-3xl text-gray-900 mt-5">About</h1>
           <div className="flex container mx-auto py-10 px-5 flex-col md:flex-row items-center ">
             <div className="md:w-1/2 flex-grow mb-6">
               <Image
@@ -23,13 +30,36 @@ export default function Home() {
                 isak（イサク）
               </h2>
               <p className="mb-8 leading-relaxed">
-                所属 : 東京工業大学 工学院 情報通信系 B4
+                所属 : 東京工業大学 工学院 情報通信系
                 <br />
                 サークル : デジタル創作同好会traP
                 <br />
                 VRに関連した研究をしています
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="text-gray-700 border-b border-gray-200">
+        <div className="mx-auto container max-w-screen-lg">
+          <h1 className="text-center text-3xl text-gray-900 mt-5 mb-5">
+            Skills
+          </h1>
+          <div className="flex flex-wrap">
+            <SkillCard
+              icon={faUnity}
+              skillName="Unity"
+              text="サークルでUnityを用いたチーム開発を行いました."
+            />
+            <SkillCard
+              icon={faReact}
+              skillName="React"
+              text="Reactを使ってtwitterクローンアプリを作りました. また, このサイトはNext.jsで作成しています."
+            />
+            <SkillCard icon={faSquareJs} skillName="javascript" text="aaaa" />
+            <SkillCard icon={faUnity} skillName="blender" text="aaaa" />
+            <SkillCard icon={faUnity} skillName="a" text="aaaa" />
+            <SkillCard icon={faUnity} skillName="a" text="aaaa" />
           </div>
         </div>
       </section>
