@@ -1,14 +1,21 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUnity,
   faReact,
   faSquareJs,
   faTwitter,
+  faGithub,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faAddressCard,
+  faPenNib,
+  faCircleInfo,
+  faLink,
+} from "@fortawesome/free-solid-svg-icons";
 import SkillCard from "../components/SkillCard";
 
 export default function Home() {
@@ -16,7 +23,10 @@ export default function Home() {
     <>
       <section className="text-gray-700 border-b border-gray-200">
         <div className="mx-auto container items-center max-w-screen-lg">
-          <h1 className="text-center text-3xl text-gray-900 mt-5">About</h1>
+          <h1 className="text-center text-3xl text-gray-900 mt-5">
+            <FontAwesomeIcon className="mx-3" icon={faCircleInfo} />
+            About
+          </h1>
           <div className="flex container mx-auto py-10 px-5 flex-col md:flex-row items-center ">
             <div className="md:w-1/2 flex-grow mb-6">
               <Image
@@ -45,6 +55,7 @@ export default function Home() {
       <section className="text-gray-700 border-b border-gray-200">
         <div className="mx-auto container max-w-screen-lg">
           <h1 className="text-center text-3xl text-gray-900 mt-5 mb-5">
+            <FontAwesomeIcon className="mx-3" icon={faPenNib} />
             Skills
           </h1>
           <div className="flex flex-wrap">
@@ -68,6 +79,7 @@ export default function Home() {
       <section className="text-gray-700 border-b border-gray-200">
         <div className="mx-auto container max-w-screen-lg">
           <h1 className="text-center text-3xl text-gray-900 mt-5 mb-5">
+            <FontAwesomeIcon className="mx-3" icon={faAddressCard} />
             Contact
           </h1>
           <div className="flex flex-col items-center">
@@ -77,10 +89,36 @@ export default function Home() {
             </div>
             <a
               href="https://twitter.com/isak???"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-2xl flex items-center mb-5"
             >
               <FontAwesomeIcon icon={faTwitter} />
               <p className="ml-2">@あとで書く</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section className="text-gray-700 border-b border-gray-200">
+        <div className="mx-auto container max-w-screen-lg">
+          <h1 className="text-center text-3xl text-gray-900 mt-5 mb-5">
+            <FontAwesomeIcon className="mx-3" icon={faLink} />
+            Links
+          </h1>
+          <div className="flex flex-row justify-center mb-5">
+            <a
+              href="https://github.com/isak139"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon className="text-5xl mx-3" icon={faGithub} />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/あとで書く"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon className="text-5xl mx-3" icon={faYoutube} />
             </a>
           </div>
         </div>
