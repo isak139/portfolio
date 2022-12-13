@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <section className="text-gray-700 border-b border-gray-200">
         <div className="flex flex-col mx-auto container items-center max-w-screen-lg">
-          <div className="text-3xl mt-5 px-5 md:mr-auto">About</div>
+          <h1 className="text-3xl mx-5 mt-5 md:mr-auto">About</h1>
           <div className="flex container mx-auto py-10 px-5 flex-col md:flex-row items-center ">
             <div className="md:w-1/2 flex-grow mb-6">
               <Image
@@ -19,9 +19,9 @@ export default function Home() {
               />
             </div>
             <div className="mx-auto md:w-1/2 lg:max-w-lg w-5/6 text-center md:text-left">
-              <h1 className="text-2xl mb-3 text-gray-900 font-medium">
+              <h2 className="text-2xl mb-3 text-gray-900 font-medium">
                 isak（イサク）
-              </h1>
+              </h2>
               <p className="mb-8 leading-relaxed">
                 所属 : 東京工業大学 工学院 情報通信系 B4
                 <br />
