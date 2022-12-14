@@ -16,7 +16,8 @@ import {
   faCircleInfo,
   faLink,
 } from "@fortawesome/free-solid-svg-icons";
-import SkillCard from "../components/SkillCard";
+import SvgBlender from "/public/blender.svg";
+import SkillCard from "/components/SkillCard";
 
 export default function Home() {
   return (
@@ -70,7 +71,7 @@ export default function Home() {
               text="Reactを使ってtwitterクローンアプリを作りました. また, このサイトはNext.jsで作成しています."
             />
             <SkillCard icon={faSquareJs} skillName="javascript" text="aaaa" />
-            <SkillCard icon={faUnity} skillName="blender" text="aaaa" />
+            <SkillCard SvgIcon={SvgBlender} skillName="blender" text="aaaa" />
             <SkillCard icon={faUnity} skillName="a" text="aaaa" />
             <SkillCard icon={faUnity} skillName="a" text="aaaa" />
           </div>
