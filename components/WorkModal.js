@@ -1,5 +1,3 @@
-import React from "react";
-
 function WorkModal({ isModalOpen, setIsModalOpen, title, image, tags }) {
   return isModalOpen ? (
     <div
