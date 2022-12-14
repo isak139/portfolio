@@ -111,14 +111,20 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon className="text-5xl mx-3" icon={faGithub} />
+              <FontAwesomeIcon
+                className="text-5xl mx-3 hover:scale-110 transition duration-300 ease-in-out "
+                icon={faGithub}
+              />
             </a>
             <a
               href="https://www.youtube.com/channel/あとで書く"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon className="text-5xl mx-3" icon={faYoutube} />
+              <FontAwesomeIcon
+                className="text-5xl mx-3 hover:scale-110 transition duration-300 ease-in-out "
+                icon={faYoutube}
+              />
             </a>
           </div>
         </div>
