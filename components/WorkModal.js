@@ -24,7 +24,7 @@ function WorkModal({ isModalOpen, setIsModalOpen, work }) {
         <div className="ml-6 mt-auto flex justify-center sm:justify-start">
           {work.links.blog ? (
             <button
-              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-3"
               onClick={() => window.open(work.links.blog)}
             >
               Blog
@@ -32,7 +32,7 @@ function WorkModal({ isModalOpen, setIsModalOpen, work }) {
           ) : null}
           {work.links.github ? (
             <button
-              class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded mr-3"
+              className="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded mr-3"
               onClick={() => window.open(work.links.github)}
             >
               Github
@@ -40,7 +40,7 @@ function WorkModal({ isModalOpen, setIsModalOpen, work }) {
           ) : null}
           {work.links.youtube ? (
             <button
-              class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mr-3"
+              className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mr-3"
               onClick={() => window.open(work.links.youtube)}
             >
               Youtube
