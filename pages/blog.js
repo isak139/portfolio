@@ -35,7 +35,7 @@ function blog({ blog }) {
                   className="object-cover rounded-lg"
                 />
               </div>
-              <div className="text-xl p-2 flex flex-col">
+              <div className="md:m-3 text-xl p-2 flex flex-col">
                 <h2>{blog.title}</h2>
                 <div className="md:mt-10 md:ml-5 flex flex-row items-center justify-center md:justify-start">
                   <FontAwesomeIcon icon={faArrowRight} className="mr-3" />
