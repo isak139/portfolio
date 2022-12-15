@@ -1,31 +1,15 @@
-import Head from "next/head";
+//import Head from "next/head";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faUnity,
-  faReact,
-  faSquareJs,
-  faTwitter,
-  faGithub,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faEnvelope,
-  faAddressCard,
-  faPenNib,
-  faCircleInfo,
-  faLink,
-} from "@fortawesome/free-solid-svg-icons";
-import SvgBlender from "/public/blender.svg";
 import SkillCard from "/components/SkillCard";
+import { Icon } from "@iconify/react";
 
 export default function Home() {
   return (
     <>
       <section className="text-gray-700 border-b border-gray-200">
         <div className="mx-auto container items-center max-w-screen-lg">
-          <h1 className="text-center text-3xl text-gray-900 mt-5">
-            <FontAwesomeIcon className="mx-3" icon={faCircleInfo} />
+          <h1 className="text-3xl text-gray-900 mt-5 flex flex-row items-center justify-center">
+            <Icon icon="fa6-solid:circle-info" className="mr-3" />
             About
           </h1>
           <div className="flex container mx-auto py-10 px-5 flex-col md:flex-row items-center ">
@@ -55,37 +39,45 @@ export default function Home() {
       </section>
       <section className="text-gray-700 border-b border-gray-200">
         <div className="mx-auto container max-w-screen-lg">
-          <h1 className="text-center text-3xl text-gray-900 mt-5 mb-5">
-            <FontAwesomeIcon className="mx-3" icon={faPenNib} />
+          <h1 className="text-3xl text-gray-900 mt-5 flex flex-row items-center justify-center">
+            <Icon icon="fa6-solid:pen-nib" className="mr-3" />
             Skills
           </h1>
           <div className="flex flex-wrap">
             <SkillCard
-              icon={faUnity}
+              icon="fa6-brands:unity"
               skillName="Unity"
               text="サークルでUnityを用いたチーム開発を行いました."
             />
             <SkillCard
-              icon={faReact}
+              icon="fa6-brands:react"
               skillName="React"
               text="Reactを使ってtwitterクローンアプリを作りました. また, このサイトはNext.jsで作成しています."
             />
-            <SkillCard icon={faSquareJs} skillName="javascript" text="aaaa" />
-            <SkillCard SvgIcon={SvgBlender} skillName="blender" text="aaaa" />
-            <SkillCard icon={faUnity} skillName="a" text="aaaa" />
-            <SkillCard icon={faUnity} skillName="a" text="aaaa" />
+            <SkillCard
+              icon="fa6-brands:square-js"
+              skillName="javascript"
+              text="aaaa"
+            />
+            <SkillCard
+              icon="mdi:blender-software"
+              skillName="blender"
+              text="aaaa"
+            />
+            <SkillCard icon="fa6-brands:unity" skillName="a" text="aaaa" />
+            <SkillCard icon="fa6-brands:unity" skillName="a" text="aaaa" />
           </div>
         </div>
       </section>
       <section className="text-gray-700 border-b border-gray-200">
         <div className="mx-auto container max-w-screen-lg">
-          <h1 className="text-center text-3xl text-gray-900 mt-5 mb-5">
-            <FontAwesomeIcon className="mx-3" icon={faAddressCard} />
+          <h1 className="text-3xl text-gray-900 mt-5 flex flex-row items-center justify-center">
+            <Icon icon="fa6-solid:address-card" className="mr-3" />
             Contact
           </h1>
           <div className="flex flex-col items-center">
             <div className="text-2xl flex items-center mb-3">
-              <FontAwesomeIcon icon={faEnvelope} />
+              <Icon icon="fa6-solid:envelope" />
               <p className="ml-2">hogehoge[at]fuga.com</p>
             </div>
             <a
@@ -94,7 +86,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="text-2xl flex items-center mb-5"
             >
-              <FontAwesomeIcon icon={faTwitter} />
+              <Icon icon="fa6-brands:twitter" />
               <p className="ml-2">@あとで書く</p>
             </a>
           </div>
@@ -102,8 +94,8 @@ export default function Home() {
       </section>
       <section className="text-gray-700 border-b border-gray-200">
         <div className="mx-auto container max-w-screen-lg">
-          <h1 className="text-center text-3xl text-gray-900 mt-5 mb-5">
-            <FontAwesomeIcon className="mx-3" icon={faLink} />
+          <h1 className="text-3xl text-gray-900 mt-5 mb-5 flex flex-row items-center justify-center">
+            <Icon icon="fa6-solid:link" className="mr-3" />
             Links
           </h1>
           <div className="flex flex-row justify-center mb-5">
@@ -112,9 +104,9 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon
-                className="text-5xl mx-3 hover:scale-110 transition duration-300 ease-in-out "
-                icon={faGithub}
+              <Icon
+                icon="fa6-brands:github"
+                className="text-5xl mx-3 hover:scale-110 duration-300"
               />
             </a>
             <a
@@ -122,9 +114,9 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon
-                className="text-5xl mx-3 hover:scale-110 transition duration-300 ease-in-out "
-                icon={faYoutube}
+              <Icon
+                icon="fa6-brands:youtube"
+                className="text-5xl mx-3 hover:scale-110 duration-300"
               />
             </a>
           </div>
