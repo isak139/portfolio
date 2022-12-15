@@ -16,7 +16,7 @@ function WorkCard({ work }) {
             src={work.image.url}
             alt=""
             fill
-            className="object-cover rounded-lg"
+            className="object-cover rounded-lg hover:scale-105 hover:opacity-50 transition transform duration-500 ease-in-out"
           />
         </div>
         <h2 className="text-gray-900 text-2xl font-medium ml-3">
