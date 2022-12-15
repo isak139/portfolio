@@ -26,7 +26,7 @@ function Header() {
             href="/blog"
             className=" hover:text-blue-400 duration-300 cursor-pointer"
           >
-            blog
+            Blog
           </Link>
         </nav>
       </div>
