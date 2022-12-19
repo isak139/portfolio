@@ -7,10 +7,10 @@ function WorkModal({ isModalOpen, setIsModalOpen, work }) {
       onClick={() => setIsModalOpen(false)}
     >
       <div
-        className="p-5 rounded-lg md:w-11/12 w-5/6 bg-white max-w-screen-lg h-1/3 md:h-1/2 flex flex-col"
+        className="p-3 rounded-lg md:w-11/12 w-5/6 bg-white max-w-screen-lg flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="rounded-lg p-5 w-5/6 h-1/3 md:h-2/3 mx-auto relative">
+        <div className="rounded-lg w-5/6 h-56 sm:h-72 md:h-96 mx-auto relative">
           <Image
             src={work.image.url}
             alt=""
