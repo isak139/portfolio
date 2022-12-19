@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { client } from "../libs/client";
 import { Icon } from "@iconify/react";
+import BlogCard from "../components/BlogCard";
 
 export const getStaticProps = async () => {
   const data = await client.get({ endpoint: "blog" });
@@ -19,7 +20,12 @@ function blog({ blog }) {
           <Icon icon="fa6-solid:rss" className="mr-3" />
           Blog
         </h1>
-        <div className="flex flex-col mx-10 mt-5">
+        <div className="flex flex-wrap">
+          {blog.map((blog) => (
+            <BlogCard key={blog.id} blog={blog} />
+          ))}
+        </div>
+        {/* <div className="flex flex-col mx-10 mt-5">
           {blog.map((blog) => (
             <Link
               key={blog.id}
@@ -43,7 +49,7 @@ function blog({ blog }) {
               </div>
             </Link>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
