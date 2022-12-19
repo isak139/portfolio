@@ -19,6 +19,7 @@ export const getStaticPaths = async () => {
 };
 
 export default function blogId({ blog }) {
+  const date = new Date(blog.publishedAt);
   return (
     <main className="w-2/3 mx-auto text-gray-700">
       <div className="relative h-56 sm:h-72 md:h-96 m-3">
@@ -30,7 +31,9 @@ export default function blogId({ blog }) {
         />
       </div>
       <h1 className="text-3xl text-center my-5">{blog.title}</h1>
-      <div className="mb-5">投稿：{blog.publishedAt}</div>
+      <div className="mb-5">
+        投稿：{date.getFullYear()}/{date.getMonth() + 1}/{date.getDate()}
+      </div>
       <div
         dangerouslySetInnerHTML={{ __html: `${blog.content}` }}
         className={blogStyles.post}
