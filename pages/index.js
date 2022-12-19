@@ -24,7 +24,7 @@ export default function Home() {
             </div>
             <div className="mx-auto md:w-1/2 lg:max-w-lg w-5/6 text-center md:text-left">
               <h2 className="text-2xl mb-3 text-gray-900 font-medium">
-                isak（イサク）
+                isak&#040;イサク&#041;
               </h2>
               <p className="mb-8 leading-relaxed">
                 所属 : 東京工業大学 工学院 情報通信系
