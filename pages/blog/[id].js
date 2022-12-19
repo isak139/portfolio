@@ -21,7 +21,7 @@ export const getStaticPaths = async () => {
 export default function blogId({ blog }) {
   return (
     <main className="w-2/3 mx-auto text-gray-700">
-      <div className="relative h-48 sm:h-80 m-3">
+      <div className="relative h-56 sm:h-72 md:h-96 m-3">
         <Image
           src={blog.eyecatch.url}
           alt=""
