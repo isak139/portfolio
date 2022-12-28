@@ -56,7 +56,7 @@ export default function Home() {
             <SkillCard
               icon="mdi:blender-software"
               skillName="blender"
-              text="複数体のフルスクラッチ人体モデルの作成を行いました. テクスチャリング，リギングも出来ます．機械的な物体のモデリングも得意です． →works"
+              text="複数体のフルスクラッチ人体モデルの作成を行いました. Unityに適した形式で作れます.また,機械や建築物も制作可能です. →works"
             />
             <SkillCard
               icon="fa6-brands:unity"
@@ -81,7 +81,7 @@ export default function Home() {
             <SkillCard
               icon="mdi:language-cpp"
               skillName="C++"
-              text="大学の授業および競技プログラミングで使用．"
+              text="大学の授業および競技プログラミングで使用しています．"
             />
           </div>
         </div>
@@ -95,16 +95,16 @@ export default function Home() {
           <div className="flex flex-col items-center">
             <div className="text-2xl flex items-center mb-3">
               <Icon icon="fa6-solid:envelope" />
-              <p className="ml-2">hogehoge[at]fuga.com</p>
+              <p className="ml-2">isak.cg.work[at]gmail.com</p>
             </div>
             <a
-              href="https://twitter.com/isak???"
+              href="https://twitter.com/isak_cg"
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl flex items-center mb-5"
             >
               <Icon icon="fa6-brands:twitter" />
-              <p className="ml-2">@あとで書く</p>
+              <p className="ml-2">@isak_cg</p>
             </a>
           </div>
         </div>
@@ -127,7 +127,7 @@ export default function Home() {
               />
             </a>
             <a
-              href="https://www.youtube.com/channel/あとで書く"
+              href="https://www.youtube.com/channel/UCE7fJN9velv6xDd4CZ5JzGw"
               target="_blank"
               rel="noopener noreferrer"
             >
