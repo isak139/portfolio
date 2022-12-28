@@ -57,13 +57,15 @@ export default function blogId({ blog }) {
           className={blogStyles.post}
         />
       </main>
-      <Link
-        href="/blog"
-        className="border-t border-gray-200 p-5 flex flex-row items-center justify-center text-xl"
-      >
-        <Icon icon="fa6-solid:arrow-right-to-bracket" className="mr-2" />
-        <span>Blog</span>
-      </Link>
+      <div className="border-t border-gray-200 p-5">
+        <Link
+          href="/blog"
+          className="flex flex-row items-center mx-auto text-xl w-fit hover:text-blue-400 duration-300 cursor-pointer"
+        >
+          <Icon icon="fa6-solid:arrow-right-to-bracket" className="mr-2" />
+          <span>Blog</span>
+        </Link>
+      </div>
     </>
   );
 }
