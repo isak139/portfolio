@@ -38,7 +38,25 @@ export default function Home() {
               <p className="mb-8 leading-relaxed">
                 所属 : 東京工業大学 工学院 情報通信系
                 <br />
-                サークル : デジタル創作同好会traP
+                研究室 : 東京工業大学
+                <a
+                  href="https://haselab.net"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-blue-400 duration-300"
+                >
+                  長谷川研究室
+                </a>
+                <br />
+                サークル :{" "}
+                <a
+                  href="https://trap.jp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-blue-400 duration-300"
+                >
+                  デジタル創作同好会traP
+                </a>
                 <br />
                 VRに関連した研究をしています
               </p>
