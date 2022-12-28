@@ -1,11 +1,21 @@
-//import Head from "next/head";
+import Head from "next/head";
 import Image from "next/image";
 import SkillCard from "/components/SkillCard";
 import { Icon } from "@iconify/react";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   return (
     <>
+      <NextSeo
+        title="Home | isak's portfolio"
+        description="isakのポートフォリオサイトのホームです"
+        openGraph={{
+          url: "https://isak-portfolio.vercel.app/",
+          title: "Home | isak's portfolio",
+          description: "isakのポートフォリオサイトのホームです",
+        }}
+      />
       <section className="text-gray-700 border-b border-gray-200">
         <div className="mx-auto container items-center max-w-screen-lg">
           <h1 className="text-3xl text-gray-900 mt-5 flex flex-row items-center justify-center">
