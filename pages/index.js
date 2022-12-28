@@ -54,9 +54,14 @@ export default function Home() {
           </h1>
           <div className="flex flex-wrap">
             <SkillCard
+              icon="mdi:blender-software"
+              skillName="blender"
+              text="複数体のフルスクラッチ人体モデルの作成を行いました. テクスチャリング，リギングも出来ます．機械的な物体のモデリングも得意です． →works"
+            />
+            <SkillCard
               icon="fa6-brands:unity"
               skillName="Unity"
-              text="サークルでUnityを用いたチーム開発を行いました."
+              text="サークルでUnityを用いたチーム開発を行いました. Photonを用いたオンラインゲームも作りました. →works"
             />
             <SkillCard
               icon="fa6-brands:react"
@@ -66,15 +71,18 @@ export default function Home() {
             <SkillCard
               icon="fa6-brands:square-js"
               skillName="javascript"
-              text="aaaa"
+              text="外部から取得したデータを表示できるdiscord BOTを作りました. (Node.js)"
             />
             <SkillCard
-              icon="mdi:blender-software"
-              skillName="blender"
-              text="aaaa"
+              icon="fa6-brands:python"
+              skillName="Python"
+              text="基本的な機械学習を行いました．機械学習帳を一通り終わらせました．"
             />
-            <SkillCard icon="fa6-brands:unity" skillName="a" text="aaaa" />
-            <SkillCard icon="fa6-brands:unity" skillName="a" text="aaaa" />
+            <SkillCard
+              icon="mdi:language-cpp"
+              skillName="C++"
+              text="大学の授業および競技プログラミングで使用．"
+            />
           </div>
         </div>
       </section>
