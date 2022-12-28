@@ -3,6 +3,7 @@ import Link from "next/link";
 import { client } from "../libs/client";
 import { Icon } from "@iconify/react";
 import BlogCard from "../components/BlogCard";
+import { NextSeo } from "next-seo";
 
 export const getStaticProps = async () => {
   const data = await client.get({ endpoint: "blog" });
@@ -14,18 +15,28 @@ export const getStaticProps = async () => {
 
 function blog({ blog }) {
   return (
-    <section className="text-gray-700">
-      <div className="mx-auto container items-center max-w-screen-lg">
-        <h1 className="text-3xl text-gray-900 mt-5 flex flex-row items-center justify-center">
-          <Icon icon="fa6-solid:rss" className="mr-3" />
-          Blog
-        </h1>
-        <div className="flex flex-wrap">
-          {blog.map((blog) => (
-            <BlogCard key={blog.id} blog={blog} />
-          ))}
-        </div>
-        {/* <div className="flex flex-col mx-10 mt-5">
+    <>
+      <NextSeo
+        title="Blog | isak's portfolio"
+        description="isakのブログです"
+        openGraph={{
+          url: "https://isak-portfolio.vercel.app/blog",
+          title: "Blog | isak's portfolio",
+          description: "isakのブログです",
+        }}
+      />
+      <section className="text-gray-700">
+        <div className="mx-auto container items-center max-w-screen-lg">
+          <h1 className="text-3xl text-gray-900 mt-5 flex flex-row items-center justify-center">
+            <Icon icon="fa6-solid:rss" className="mr-3" />
+            Blog
+          </h1>
+          <div className="flex flex-wrap">
+            {blog.map((blog) => (
+              <BlogCard key={blog.id} blog={blog} />
+            ))}
+          </div>
+          {/* <div className="flex flex-col mx-10 mt-5">
           {blog.map((blog) => (
             <Link
               key={blog.id}
@@ -50,8 +61,9 @@ function blog({ blog }) {
             </Link>
           ))}
         </div> */}
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 }
 
