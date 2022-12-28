@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import SkillCard from "/components/SkillCard";
 import { Icon } from "@iconify/react";
