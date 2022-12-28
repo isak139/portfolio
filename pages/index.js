@@ -89,7 +89,7 @@ export default function Home() {
             <SkillCard
               icon="fa6-brands:square-js"
               skillName="javascript"
-              text="外部から取得したデータを表示できるdiscord BOTを作りました. (Node.js)"
+              text="外部から取得したデータを表示できるdiscord BOTを作りました."
             />
             <SkillCard
               icon="fa6-brands:python"
