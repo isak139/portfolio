@@ -3,6 +3,7 @@ import blogStyles from "../../styles/Blog.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
+import { NextSeo } from "next-seo";
 
 export const getStaticProps = async (context) => {
   const id = context.params.id;
@@ -24,6 +25,20 @@ export default function blogId({ blog }) {
   const date = new Date(blog.publishedAt);
   return (
     <>
+      <NextSeo
+        title={blog.title}
+        description={blog.description}
+        openGraph={{
+          url: `https://isak-portfolio.vercel.app/blog/${blog.id}`,
+          title: blog.title,
+          description: blog.description,
+          images: [
+            {
+              url: blog.eyecatch.url,
+            },
+          ],
+        }}
+      />
       <main className="w-2/3 mx-auto text-gray-700">
         <div className="relative h-56 sm:h-72 md:h-96 m-3">
           <Image
