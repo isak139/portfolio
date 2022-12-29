@@ -73,7 +73,7 @@ export default function Home() {
           <div className="flex flex-wrap">
             <SkillCard
               icon="mdi:blender-software"
-              skillName="blender"
+              skillName="Blender"
               text="複数体のフルスクラッチ人体モデルの作成を行いました. Unityに適した形式で作れます.また,機械や建築物も制作可能です. →works"
             />
             <SkillCard
@@ -88,7 +88,7 @@ export default function Home() {
             />
             <SkillCard
               icon="fa6-brands:square-js"
-              skillName="javascript"
+              skillName="JavaScript"
               text="外部から取得したデータを表示できるdiscord BOTを作りました."
             />
             <SkillCard
