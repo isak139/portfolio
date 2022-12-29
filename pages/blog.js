@@ -13,7 +13,7 @@ export const getStaticProps = async () => {
   };
 };
 
-function blog({ blog }) {
+function Blog({ blog }) {
   return (
     <>
       <NextSeo
@@ -26,7 +26,7 @@ function blog({ blog }) {
         }}
       />
       <section className="text-gray-700">
-        <div className="mx-auto container items-center max-w-screen-lg">
+        <div className="mx-auto max-w-screen-lg">
           <h1 className="text-3xl text-gray-900 mt-5 flex flex-row items-center justify-center">
             <Icon icon="fa6-solid:rss" className="mr-3" />
             Blog
@@ -67,4 +67,4 @@ function blog({ blog }) {
   );
 }
 
-export default blog;
+export default Blog;
