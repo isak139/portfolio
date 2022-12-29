@@ -2,7 +2,6 @@ import WorkCard from "../components/WorkCard";
 import { client } from "../libs/client";
 import { Icon } from "@iconify/react";
 import { NextSeo } from "next-seo";
-import WorkTagMenu from "../components/WorkTagMenu";
 import { useState } from "react";
 import TagMenuButton from "../components/TagMenuButton";
 import tags from "../libs/tags.json";
