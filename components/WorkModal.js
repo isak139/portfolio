@@ -15,7 +15,7 @@ function WorkModal({ isModalOpen, setIsModalOpen, work }) {
             src={work.image.url}
             alt=""
             fill
-            className="object-cover rounded-lg"
+            className="object-contain rounded-lg"
           />
         </div>
         <h2 className="text-2xl ml-6 mt-3">{work.title}</h2>
