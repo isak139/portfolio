@@ -7,7 +7,7 @@ import TagMenuButton from "../components/TagMenuButton";
 import tags from "../libs/tags.json";
 
 export const getStaticProps = async () => {
-  const data = await client.get({ endpoint: "works" });
+  const data = await client.get({ endpoint: "works", queries: { limit: 20 } });
 
   return {
     props: { works: data.contents },
