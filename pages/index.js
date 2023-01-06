@@ -74,32 +74,32 @@ export default function Home() {
             <SkillCard
               icon="mdi:blender-software"
               skillName="Blender"
-              text="複数体のフルスクラッチ人体モデルの作成を行いました. Unityに適した形式で作れます.また,機械や建築物も制作可能です. →works"
+              description="複数体のフルスクラッチ人体モデルの作成を行いました. Unityに適した形式で作れます.機械や建築物も制作可能です. →works"
             />
             <SkillCard
               icon="fa6-brands:unity"
               skillName="Unity"
-              text="サークルでUnityを用いたチーム開発を行いました. Photonを用いたオンラインゲームも作りました. →works"
+              description="サークルでUnityを用いたチーム開発を行いました. Photonを用いたオンラインゲームも作りました. →works"
             />
             <SkillCard
               icon="fa6-brands:react"
               skillName="React"
-              text="Reactを使ってtwitterクローンアプリを作りました. また, このサイトはNext.jsで作成しています."
+              description="Reactを使ってtwitterクローンアプリを作りました. また, このサイトはNext.jsで作成しています."
             />
             <SkillCard
               icon="fa6-brands:square-js"
               skillName="JavaScript"
-              text="外部から取得したデータを表示できるdiscord BOTを作りました."
+              description="外部から取得したデータを表示できるdiscord BOTを作りました."
             />
             <SkillCard
               icon="fa6-brands:python"
               skillName="Python"
-              text="基本的な機械学習を行いました．機械学習帳を一通り終わらせました．"
+              description="基本的な機械学習を行いました．機械学習帳を一通り終わらせました．"
             />
             <SkillCard
               icon="mdi:language-cpp"
               skillName="C++"
-              text="大学の授業および競技プログラミングで使用しています．"
+              description="大学の授業および競技プログラミングで使用しています．"
             />
           </div>
         </div>
