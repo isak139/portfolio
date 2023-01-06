@@ -155,7 +155,7 @@ export default function Home() {
           <div className="flex flex-col items-center">
             <div className="text-2xl flex items-center mb-3">
               <Icon icon="fa6-solid:envelope" />
-              <p className="ml-2">isak.cg.work[at]gmail.com</p>
+              <p className="ml-2">isak.cg.work&#91;at&#93;gmail.com</p>
             </div>
             <a
               href="https://twitter.com/isak_cg"
