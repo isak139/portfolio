@@ -24,7 +24,7 @@ export default function Home() {
           <div className="flex container mx-auto py-10 px-5 flex-col md:flex-row items-center ">
             <div className="md:w-1/2 flex-grow mb-6">
               <Image
-                className="p-1 ring-2 rounded-full"
+                className="p-1 rounded-full"
                 src="/icon.jpg"
                 alt=""
                 width={300}
@@ -119,7 +119,7 @@ export default function Home() {
               href="https://twitter.com/isak_cg"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-2xl flex items-center mb-5"
+              className="text-2xl flex items-center mb-5 hover:text-blue-400 duration-300"
             >
               <Icon icon="fa6-brands:twitter" />
               <p className="ml-2">@isak_cg</p>
@@ -141,7 +141,7 @@ export default function Home() {
             >
               <Icon
                 icon="fa6-brands:github"
-                className="text-5xl mx-3 hover:scale-110 duration-300"
+                className="text-5xl mx-3 hover:text-blue-400 duration-300"
               />
             </a>
             <a
@@ -151,7 +151,7 @@ export default function Home() {
             >
               <Icon
                 icon="fa6-brands:youtube"
-                className="text-5xl mx-3 hover:scale-110 duration-300"
+                className="text-5xl mx-3 hover:text-blue-400 duration-300"
               />
             </a>
           </div>
