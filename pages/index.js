@@ -2,6 +2,7 @@ import Image from "next/image";
 import SkillCard from "/components/SkillCard";
 import { Icon } from "@iconify/react";
 import { NextSeo } from "next-seo";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -74,12 +75,38 @@ export default function Home() {
             <SkillCard
               icon="mdi:blender-software"
               skillName="Blender"
-              description="複数体のフルスクラッチ人体モデルの作成を行いました. Unityに適した形式で作れます.機械や建築物も制作可能です. →works"
+              description={
+                <div>
+                  <p>
+                    複数体のフルスクラッチ人体モデルの作成を行いました.
+                    Unityに適した形式で作れます.機械や建築物も制作可能です.
+                  </p>
+                  <Link
+                    href="/works"
+                    className="hover:text-blue-400 duration-300 underline"
+                  >
+                    →works
+                  </Link>
+                </div>
+              }
             />
             <SkillCard
               icon="fa6-brands:unity"
               skillName="Unity"
-              description="サークルでUnityを用いたチーム開発を行いました. Photonを用いたオンラインゲームも作りました. →works"
+              description={
+                <div>
+                  <p>
+                    サークルでUnityを用いたチーム開発を行いました.
+                    Photonを用いたオンラインゲームも作りました
+                  </p>
+                  <Link
+                    href="/works"
+                    className="hover:text-blue-400 duration-300 underline"
+                  >
+                    →works
+                  </Link>
+                </div>
+              }
             />
             <SkillCard
               icon="fa6-brands:react"
@@ -94,7 +121,22 @@ export default function Home() {
             <SkillCard
               icon="fa6-brands:python"
               skillName="Python"
-              description="基本的な機械学習を行いました．機械学習帳を一通り終わらせました．"
+              description={
+                <div>
+                  <p>
+                    基本的な機械学習を行う際に使用しました．
+                    <a
+                      href="https://chokkan.github.io/mlnote/index.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-blue-400 duration-300 underline"
+                    >
+                      機械学習帳
+                    </a>
+                    を一通り終わらせました．
+                  </p>
+                </div>
+              }
             />
             <SkillCard
               icon="mdi:language-cpp"
