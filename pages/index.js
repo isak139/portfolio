@@ -25,7 +25,7 @@ export default function Home() {
             <div className="md:w-1/2 flex-grow mb-6">
               <Image
                 className="p-1 rounded-full"
-                src="/icon.jpg"
+                src="/icon.png"
                 alt=""
                 width={300}
                 height={300}
