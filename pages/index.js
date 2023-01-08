@@ -59,7 +59,7 @@ export default function Home() {
                   デジタル創作同好会traP
                 </a>
                 <br />
-                VRに関連した研究をしています
+                VRに関連する研究を行っています.学士卒業研究ではUnityを用いてキャラクタ姿勢の自然な補間をテーマに研究しました.
               </p>
             </div>
           </div>
